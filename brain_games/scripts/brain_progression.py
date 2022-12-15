@@ -4,8 +4,7 @@ from brain_games.game.even_numbers import quest
 
 def main():
     print('Welcome to the Brain Games!')
-    engine(1, 'Answer "yes" if the number is even, otherwise answer "no".')
+    engine(4, 'What number is missing in the progression?')
 
 if __name__ == '__main__':
     main()
-

@@ -14,4 +14,7 @@ step 7
 
 https://asciinema.org/a/9AbyzIw27XMxqE5Wv7cbzeczL
 
+step 8
+
+https://asciinema.org/a/zog4Vzzz22Q3WZXc8dyqvgYb5
 

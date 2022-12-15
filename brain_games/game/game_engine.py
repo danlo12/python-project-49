@@ -2,7 +2,7 @@ import prompt
 from brain_games.game.cli import welcome_user
 from brain_games.game.even_numbers import quest
 from brain_games.game.calculate_game import calc
-
+from brain_games.game.gcd_game import gcd_g
 
 def engine(check, rules):
     name = welcome_user()
@@ -13,6 +13,8 @@ def engine(check, rules):
           func = quest()
        if check == 2:
           func = calc()
+       if check == 3:
+          func = gcd_g()
        if func[0] == "right":
           print("Correct!")
        elif func[0] == "error":

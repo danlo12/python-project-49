@@ -7,7 +7,7 @@ def progress():
     numb_2 = randint(0, 9)
     numb_3 = randint(1, 5)
     timer = 10
-    quest = [str(numb_1),]
+    quest = [str(numb_1), ]
     while timer > 0:
         numb_1 += numb_3
         quest.append(str(numb_1))

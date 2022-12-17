@@ -25,9 +25,9 @@ def engine(check, rules):
           print("Correct!")
        elif func[0] == "error":
           print(func[1])
-          print("Let's try again, " + name)
+          print("Let's try again, " + name + "!")
           break
        if timer == 2:
-          print("Congratulations, " + name)
+          print("Congratulations, " + name + "!")
           break
        timer += 1

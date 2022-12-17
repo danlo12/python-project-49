@@ -9,11 +9,10 @@ def quest():
    answer = prompt.string("Your answer:")
    if numb % 2 == 0:
       right = "yes"
-      error = "'no' is wrong answer ;(. Correct answer was 'yes'."
    else:
       right = "no"
-      error = "'yes' is wrong answer ;(. Correct answer was 'no'."
    if answer == right:
       return ("right", error)
    if answer != right:
+      error = answer + " is wrong answer ;(. Correct answer was " + right
       return ("error", error)

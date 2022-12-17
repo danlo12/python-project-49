@@ -18,3 +18,6 @@ step 8
 
 https://asciinema.org/a/zog4Vzzz22Q3WZXc8dyqvgYb5
 
+step 9
+
+https://asciinema.org/a/rRwaJMIm4qjaaNG7kFimcGMQR

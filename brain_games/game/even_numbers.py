@@ -12,7 +12,7 @@ def quest():
    else:
       right = "no"
    if answer == right:
-      return ("right", error)
+      return ("right",)
    if answer != right:
       error = answer + " is wrong answer ;(. Correct answer was " + right
       return ("error", error)

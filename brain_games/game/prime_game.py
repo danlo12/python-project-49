@@ -18,5 +18,5 @@ def prime():
    if answer == right:
       return ("right",)
    if answer != right:
-      error = answer + " is wrong answer ;(. Correct answer was " + right
+      error = answer + " is wrong answer ;(. Correct answer was " + right + '.'
       return ("error", error)

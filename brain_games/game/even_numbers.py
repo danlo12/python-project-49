@@ -2,7 +2,7 @@ import prompt
 from random import randint
 
 
-def quest():
+def even():
     numb = randint(1, 30)
     question = "Question: " + str(numb)
     print(question)

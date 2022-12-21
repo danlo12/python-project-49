@@ -14,7 +14,11 @@ def progress():
         timer -= 1
     right = quest[numb_2]
     quest[numb_2] = ".."
-    question = "Question: " + quest[0] + " " + quest[1] + " " + quest[2] + " " + quest[3] + " " + quest[4] + " " + quest[5] + " " + quest[6] + " " + quest[7] + " " + quest[8] + " " + quest[9]
+    question = "Question: "
+    timer_2 = 0
+    while timer_2 <= 9:
+        question = question + quest[timer_2] + " "
+        timer_2 += 1
     print(question)
     answer = prompt.string("Your answer:")
     if answer == right:

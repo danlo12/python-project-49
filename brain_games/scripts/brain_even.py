@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 from brain_games.game.game_engine import engine
+from brain_games.game.even_numbers import even
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    engine(1, 'Answer "yes" if the number is even, otherwise answer "no".')
+    engine(even, 'Answer "yes" if the number is even, otherwise answer "no".')
 
 
 if __name__ == '__main__':

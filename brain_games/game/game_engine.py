@@ -11,7 +11,7 @@ def engine(func, rules):
         if game[0] == "right":
             print("Correct!")
         elif game[0] == "error":
-            print(func[1])
+            print(game[1])
             print("Let's try again, " + name + "!")
             break
         if timer == 2:

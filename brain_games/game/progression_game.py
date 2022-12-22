@@ -21,9 +21,6 @@ def progress():
         timer_2 += 1
     print(question)
     answer = prompt.string("Your answer:")
-    if answer == right:
-        return ("right",)
-    if answer != right:
-        center = " is wrong answer ;(. Correct answer was "
-        error = answer + center + right
-        return ("error", error)
+    center = " is wrong answer ;(. Correct answer was "
+    error = answer + center + right
+    return (answer, right, error)

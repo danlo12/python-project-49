@@ -11,8 +11,5 @@ def even():
         right = "yes"
     else:
         right = "no"
-    if answer == right:
-        return ("right",)
-    if answer != right:
-        error = answer + " is wrong answer ;(. Correct answer was " + right
-        return ("error", error)
+    error = answer + " is wrong answer ;(. Correct answer was " + right
+    return (answer, right, error)

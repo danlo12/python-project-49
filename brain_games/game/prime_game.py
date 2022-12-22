@@ -15,8 +15,5 @@ def prime():
     question = "Question: " + str(numb)
     print(question)
     answer = prompt.string("Your answer:")
-    if answer == right:
-        return ("right",)
-    if answer != right:
-        error = answer + " is wrong answer ;(. Correct answer was " + right
-        return ("error", error)
+    error = answer + " is wrong answer ;(. Correct answer was " + right
+    return (answer, right, error)

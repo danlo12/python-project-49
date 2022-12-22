@@ -15,9 +15,7 @@ def calc():
     question = "Question: " + str(numb_1) + " " + sign + " " + str(numb_2)
     print(question)
     answer = prompt.integer("Your answer:")
-    if answer == right:
-        return ("right",)
-    if answer != right:
-        center = " is wrong answer ;(. Correct answer was "
-        error = str(answer) + center + str(right)
-        return ("error", error)
+    center = " is wrong answer ;(. Correct answer was "
+    error = str(answer) + center + str(right)
+    return (answer, right, error)
+

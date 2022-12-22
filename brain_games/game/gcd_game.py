@@ -9,9 +9,7 @@ def gcd_g():
     question = "Question: " + str(numb_1) + " " + str(numb_2)
     print(question)
     answer = prompt.integer("Your answer:")
-    if answer == gcd(numb_1, numb_2):
-        return ("right",)
-    if answer != gcd(numb_1, numb_2):
-        center = " is wrong answer ;(. Correct answer was "
-        error = str(answer) + center + str(gcd(numb_1, numb_2))
-        return ("error", error)
+    right = gcd(numb_1, numb_2)
+    center = " is wrong answer ;(. Correct answer was "
+    error = str(answer) + center + str(gcd(numb_1, numb_2))
+    return (answer, right, error)

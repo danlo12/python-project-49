@@ -1,4 +1,4 @@
-from brain_games.game.cli import welcome_user
+from brain_games.cli import welcome_user
 
 
 def engine(func, rules):
@@ -8,10 +8,10 @@ def engine(func, rules):
     print(rules)
     while timer < 3:
         game = func()
-        if game[0] == "right":
+        if game[0] == game[1]:
             print("Correct!")
-        elif game[0] == "error":
-            print(game[1])
+        elif game[0] != game[1]:
+            print(game[2])
             print("Let's try again, " + name + "!")
             break
         if timer == 2:

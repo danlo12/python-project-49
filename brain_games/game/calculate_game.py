@@ -18,4 +18,3 @@ def calc():
     center = " is wrong answer ;(. Correct answer was "
     error = str(answer) + center + str(right)
     return (answer, right, error)
-

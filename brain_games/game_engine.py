@@ -1,17 +1,22 @@
-from brain_games.cli import welcome_user
+import prompt
 
 
-def engine(func, rules):
+def run_game(func, rules):
     print("Welcome to the Brain Games!")
-    name = welcome_user()
+    name = prompt.string('May I have your name? ')
+    print('Hello, ' + name + '!')
     timer = 0
     print(rules)
     while timer < 3:
         game = func()
-        if game[0] == game[1]:
+        question = game[1]
+        right = game[0]
+        print(question)
+        answer = prompt.string("Your answer:")
+        if answer == right:
             print("Correct!")
-        elif game[0] != game[1]:
-            print(game[2])
+        elif answer != right:
+            print(answer + " is wrong answer ;(. Correct answer was " + right)
             print("Let's try again, " + name + "!")
             break
         if timer == 2:

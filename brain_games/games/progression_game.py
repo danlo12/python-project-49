@@ -1,4 +1,3 @@
-import prompt
 from random import randint
 
 
@@ -19,8 +18,4 @@ def progress():
     while timer_2 <= 9:
         question = question + quest[timer_2] + " "
         timer_2 += 1
-    print(question)
-    answer = prompt.string("Your answer:")
-    center = " is wrong answer ;(. Correct answer was "
-    error = answer + center + right
-    return (answer, right, error)
+    return (right, question)

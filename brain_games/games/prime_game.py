@@ -1,4 +1,3 @@
-import prompt
 from random import randint
 
 
@@ -13,7 +12,4 @@ def prime():
         if check == numb:
             right = 'yes'
     question = "Question: " + str(numb)
-    print(question)
-    answer = prompt.string("Your answer:")
-    error = answer + " is wrong answer ;(. Correct answer was " + right
-    return (answer, right, error)
+    return (right, question)

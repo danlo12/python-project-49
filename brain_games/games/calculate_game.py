@@ -1,4 +1,3 @@
-import prompt
 from random import randint, choice
 
 
@@ -13,8 +12,4 @@ def calc():
     if sign == "*":
         right = numb_1 * numb_2
     question = "Question: " + str(numb_1) + " " + sign + " " + str(numb_2)
-    print(question)
-    answer = prompt.integer("Your answer:")
-    center = " is wrong answer ;(. Correct answer was "
-    error = str(answer) + center + str(right)
-    return (answer, right, error)
+    return (str(right), question)

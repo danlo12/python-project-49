@@ -1,14 +1,14 @@
 import prompt
 
 
-def run_game(func, rules):
+def run_game(module):
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print('Hello, ' + name + '!')
+    print(module.rule)
     timer = 0
-    print(rules)
     while timer < 3:
-        game = func()
+        game = module.func()
         question = game[1]
         right = game[0]
         print(question)

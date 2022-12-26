@@ -1,5 +1,7 @@
 from random import randint
 
+rule = 'Answer "yes" if given number is prime. Otherwise answer "no"'
+
 
 def prime():
     numb = randint(2, 53)
@@ -13,3 +15,6 @@ def prime():
             right = 'yes'
     question = "Question: " + str(numb)
     return (right, question)
+
+
+func = prime

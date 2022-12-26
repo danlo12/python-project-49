@@ -1,5 +1,7 @@
 from random import randint
 
+rule = 'What number is missing in the progression?'
+
 
 def progress():
     numb_1 = randint(1, 30)
@@ -19,3 +21,6 @@ def progress():
         question = question + quest[timer_2] + " "
         timer_2 += 1
     return (right, question)
+
+
+func = progress

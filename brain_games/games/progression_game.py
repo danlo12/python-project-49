@@ -1,6 +1,6 @@
 from random import randint
 
-rule = 'What number is missing in the progression?'
+RULE = 'What number is missing in the progression?'
 
 
 def progress():
@@ -8,19 +8,16 @@ def progress():
     numb_2 = randint(0, 9)
     numb_3 = randint(1, 5)
     timer = 10
-    quest = [str(numb_1), ]
+    progression_list = [str(numb_1), ]
     while timer > 0:
         numb_1 += numb_3
-        quest.append(str(numb_1))
+        progression_list.append(str(numb_1))
         timer -= 1
-    right = quest[numb_2]
-    quest[numb_2] = ".."
-    question = "Question: "
-    timer_2 = 0
-    while timer_2 <= 9:
-        question = question + quest[timer_2] + " "
-        timer_2 += 1
-    return (right, question)
+    right_answer = progression_list[numb_2]
+    progression_list[numb_2] = ".."
+    separator = ' '
+    question = separator.join(progression_list)
+    return (right_answer, question)
 
 
-func = progress
+get_round_data = progress

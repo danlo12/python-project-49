@@ -1,6 +1,6 @@
 from random import randint, choice
 
-rule = "What is the result of the expression?"
+RULE = "What is the result of the expression?"
 
 
 def calc():
@@ -8,13 +8,13 @@ def calc():
     numb_2 = randint(1, 30)
     sign = choice("+-*")
     if sign == "+":
-        right = numb_1 + numb_2
+        right_answer = numb_1 + numb_2
     if sign == "-":
-        right = numb_1 - numb_2
+        right_answer = numb_1 - numb_2
     if sign == "*":
-        right = numb_1 * numb_2
-    question = "Question: " + str(numb_1) + " " + sign + " " + str(numb_2)
-    return (str(right), question)
+        right_answer = numb_1 * numb_2
+    question = str(numb_1) + " " + sign + " " + str(numb_2)
+    return (str(right_answer), question)
 
 
-func = calc
+get_round_data = calc

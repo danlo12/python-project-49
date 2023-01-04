@@ -3,23 +3,23 @@ from random import randint
 RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def primality_check(numb):
-    right_answer = 'no'
+def is_prime(numb):
     check = 2
     if numb == 2:
-        right_answer = 'yes'
+        return True
     while numb % check != 0:
         check += 1
     if check == numb:
-        right_answer = 'yes'
-    return right_answer
+        return True
+    else:
+        return False
 
 
-def prime():
+def get_round_data():
     numb = randint(2, 53)
-    right_answer = primality_check(numb)
+    if is_prime(numb) is True:
+        right_answer = 'yes'
+    else:
+        right_answer = 'no'
     question = str(numb)
     return (right_answer, question)
-
-
-get_round_data = prime

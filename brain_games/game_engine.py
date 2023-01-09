@@ -13,7 +13,8 @@ def run(game):
         print(f"Question: {question}")
         answer = prompt.string("Your answer:")
         if answer != right_answer:
-            print(f"{answer} is wrong answer ;(. Correct answer was {right_answer}")
+            center = "is wrong answer ;(. Correct answer was"
+            print(f"{answer} {center} {right_answer}")
             print(f"Let's try again, {name}!")
             break
         print("Correct!")

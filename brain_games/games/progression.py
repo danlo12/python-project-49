@@ -15,6 +15,5 @@ def get_round_data():
         timer -= 1
     right_answer = progression_list[step]
     progression_list[step] = ".."
-    separator = ' '
-    question = separator.join(progression_list)
+    question = " ".join(progression_list)
     return (right_answer, question)

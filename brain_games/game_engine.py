@@ -1,18 +1,18 @@
 import prompt
 
+ROUNDS_COUNT = 3
 
-def game(module):
+
+def run(game):
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print('Hello, ' + name + '!')
-    print(module.RULE)
-    step = ""
-    timer_1 = "123"
-    for step in timer_1:
-        right, question = module.get_round_data()
+    print(game.RULE)
+    for _ in range(ROUNDS_COUNT):
+        right_answer, question = game.get_round_data()
         print(f"Question: {question}")
         answer = prompt.string("Your answer:")
-        if answer != right:
+        if answer != right_answer:
             print(f"{answer} is wrong answer ;(. Correct answer was {right}")
             print(f"Let's try again, {name}!")
             break

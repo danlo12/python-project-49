@@ -4,24 +4,24 @@
 
 Project description:
 
-The project implements the initialization of various games
+The project implements the work of various games
 
-step 5
+game 1: The game checks the numbers for parity
 
 <a href="https://asciinema.org/a/uRoFRgp33wfvwXSgt7sXHNf9F" target="_blank"><img src="https://asciinema.org/a/uRoFRgp33wfvwXSgt7sXHNf9F.svg" /></a>
 
-step 6
+game 2: Calculator game
 
 <a href="https://asciinema.org/a/clMAsl1e55DAgGJ2zTqu2nfD1" target="_blank"><img src="https://asciinema.org/a/clMAsl1e55DAgGJ2zTqu2nfD1.svg" /></a>
 
-step 7
+game 3: Finding the greatest common divisor
 
 <a href="https://asciinema.org/a/9AbyzIw27XMxqE5Wv7cbzeczL" target="_blank"><img src="https://asciinema.org/a/9AbyzIw27XMxqE5Wv7cbzeczL.svg" /></a>
 
-step 8
+game 4: Finding the missing term Arithmetic progression
 
 <a href="https://asciinema.org/a/zog4Vzzz22Q3WZXc8dyqvgYb5" target="_blank"><img src="https://asciinema.org/a/zog4Vzzz22Q3WZXc8dyqvgYb5.svg" /></a>
 
-step 9
+game 5: Checking the number for simplicity
 
 <a href="https://asciinema.org/a/rRwaJMIm4qjaaNG7kFimcGMQR" target="_blank"><img src="https://asciinema.org/a/rRwaJMIm4qjaaNG7kFimcGMQR.svg" /></a>

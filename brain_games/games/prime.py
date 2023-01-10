@@ -7,6 +7,8 @@ def is_prime(numb):
     check = 2
     if numb == 2:
         return True
+    if numb == 1:
+        return False
     while numb % check != 0:
         check += 1
     if check == numb:
@@ -16,7 +18,7 @@ def is_prime(numb):
 
 
 def get_round_data():
-    numb = randint(2, 53)
+    numb = randint(1, 53)
     if is_prime(numb) is True:
         right_answer = 'yes'
     else:

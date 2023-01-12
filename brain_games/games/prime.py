@@ -4,24 +4,18 @@ RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(numb):
-    check = 2
-    if numb == 2:
-        return True
-    if numb == 1:
-        return False
-    while numb % check != 0:
-        check += 1
-    if check == numb:
-        return True
-    else:
-        return False
+    step_count = numb + 1
+    for _ in range(step_count):
+        if numb % _ == 0 and numb != _ and _ != 1:
+            return False
+        elif numb == _:
+            return True
 
 
 def get_round_data():
     numb = randint(1, 53)
-    if is_prime(numb) is True:
+    if is_prime(numb):
         right_answer = 'yes'
     else:
         right_answer = 'no'
-    question = str(numb)
-    return (right_answer, question)
+    return (right_answer, numb)

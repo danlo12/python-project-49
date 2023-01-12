@@ -5,7 +5,7 @@ RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def is_prime(numb):
     step_count = numb + 1
-    for _ in range(step_count):
+    for _ in range(1, step_count):
         if numb % _ == 0 and numb != _ and _ != 1:
             return False
         elif numb == _:

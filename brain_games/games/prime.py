@@ -1,15 +1,18 @@
 from random import randint
+import math
 
 RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_prime(numb):
-    step_count = numb + 1
-    for _ in range(1, step_count):
-        if numb % _ == 0 and numb != _ and _ != 1:
+def is_prime(number):
+    if number <= 1:
+        return False
+
+    for devider in range(2, int(math.sqrt(number) + 1)):
+        if number % devider == 0:
             return False
-        elif numb == _:
-            return True
+
+    return True
 
 
 def get_round_data():
